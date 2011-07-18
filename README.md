@@ -19,7 +19,6 @@ This package can be installed via [npm](http://npmjs.org/) as follows
     console.log(lngDetector.detect('This is a test.'));
 
     /*
-      Will print:
       [ [ 'english', 0.5969230769230769 ],
       [ 'hungarian', 0.407948717948718 ],
       [ 'latin', 0.39205128205128204 ],
@@ -34,7 +33,7 @@ This package can be installed via [npm](http://npmjs.org/) as follows
       ... ]
     */
     
-    // Only get first 2 results
+    // Only get the first 2 results
     console.log(lngDetector.detect('This is a test.', 2));
 
     /*
