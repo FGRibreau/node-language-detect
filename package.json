@@ -2,7 +2,7 @@
     "name" : "languagedetect",
     "description" : "Nodejs language detection library using n-gram",
     "keywords": ["n-gram", "language", "language detection"],
-    "version": "0.1",
+    "version": "0.0.1",
     "homepage": "http://blog.fgribreau.com/2011/07/week-end-project-nodejs-language.html",
     "devDependencies": { "nodeunit": ">= 0.5.1" },
     "author" : "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com)",

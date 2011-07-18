@@ -22,4 +22,5 @@ for ($i=0, $iM = count($a); $i < $iM; $i++) {
     $ok++;
   }
 }
-echo time()-$t.'secs  '.$iM.' items en PHP ('.$ok.' ont un bon score)';
+
+echo "$iM items processed in ".(time()-$t)." secs ($ok with a score > 0.2)";
