@@ -2,7 +2,7 @@
     "name" : "languagedetect",
     "description" : "Nodejs language detection library using n-gram",
     "keywords": ["n-gram", "language", "language detection"],
-    "version": "0.0.1",
+    "version": "1.0.0",
     "homepage": "http://blog.fgribreau.com/2011/07/week-end-project-nodejs-language.html",
     "author" : "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com)",
     "main" : "index",
@@ -16,6 +16,9 @@
     "scripts": {
         "test": "node_modules/nodeunit/bin/nodeunit test/*.test.js"
     },
+    "contributors": [
+        "chaoser <ruslan.zavackiy@gmail.com> (https://github.com/Chaoser)"
+    ],
     "devDependencies":{
         "nodeunit":">= 0.5.1"
     },
