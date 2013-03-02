@@ -101,6 +101,24 @@ exports.detectEnglish = function (t) {
   return t.done();
 };
 
+exports.detectEnglishIso2 = function (t) {
+  var l = new LanguageDetect('iso2');
+
+  var r = l.detect("from SW HOUSTON to #PVnation SOPHOMORE STATUS Just A Soul Whose Intentions Are Good Self-expression should always b limitless if that bothers u...dont follow me");
+  t.deepEqual(r[0][0], 'en');
+
+  return t.done();
+};
+
+exports.detectEnglishIso3 = function (t) {
+  var l = new LanguageDetect('iso3');
+
+  var r = l.detect("from SW HOUSTON to #PVnation SOPHOMORE STATUS Just A Soul Whose Intentions Are Good Self-expression should always b limitless if that bothers u...dont follow me");
+  t.deepEqual(r[0][0], 'eng');
+
+  return t.done();
+};
+
 exports.detectRussian = function (t) {
   var l = new LanguageDetect();
 
