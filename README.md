@@ -7,7 +7,7 @@ LanguageDetect can identify 52 human languages from text samples and return conf
 
 This package can be installed via [npm](http://npmjs.org/) as follows
 
-    % npm install languagedetect -g
+    % npm install languagedetect
 
 ### Example
     
@@ -49,7 +49,8 @@ This package can be installed via [npm](http://npmjs.org/) as follows
 
 ### Benchmark
 
-Currently LanguageDetect handles 1000 items in 2 seconds (vs 7.5 seconds with PEAR::Text_LanguageDetect)
+node.js -> 1000 items processed in 1.596 secs (411 with a score > 0.2)
+PHP     -> 1000 items processed in 4.687 secs (535 with a score > 0.2)
 
 ### Credits
 
