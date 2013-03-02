@@ -9,6 +9,8 @@ var start = Date.now();
 for (var i in data) {
   var text = data[i];
   var r = l.detect(text.text);
+  if (!r.length) continue;
+
   if (r[0][1] > 0.2) {
     ok++;
   }

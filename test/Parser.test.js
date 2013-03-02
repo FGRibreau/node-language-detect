@@ -3,48 +3,24 @@ require('nodeunit');
 var Parser = require('../lib/Parser');
 var str = 'from SW HOUSTON to #PVnation SOPHOMORE STATUS Just A Soul Whose Intentions Are Good Self-expression should always b limitless if that bothers u...dont follow me';
 
-exports._next_char = function (t) {
-  var l = new Parser();
-
-  t.deepEqual(l._next_char(str, 0, true), [1, 'f']);
-  t.deepEqual(l._next_char(str, 1, true), [2, 'r']);
-  t.deepEqual(l._next_char(str, 2, true), [3, 'o']);
-  t.deepEqual(l._next_char(str, 3, true), [4, 'm']);
-  t.deepEqual(l._next_char(str, 4, true), [5, ' ']);
-  t.deepEqual(l._next_char(str, 5, true), [6, 's']);
-  t.deepEqual(l._next_char(str, 6, true), [7, 'w']);
-  t.deepEqual(l._next_char(str, 7, true), [8, ' ']);
-  t.deepEqual(l._next_char(str, 8, true), [9, 'h']);
-  t.deepEqual(l._next_char(str, 9, true), [10, 'o']);
-  t.deepEqual(l._next_char(str, 10, true), [11, 'u']);
-  t.deepEqual(l._next_char(str, 11, true), [12, 's']);
-  t.deepEqual(l._next_char(str, 12, true), [13, 't']);
-  t.deepEqual(l._next_char(str, 13, true), [14, 'o']);
-  t.deepEqual(l._next_char(str, 14, true), [15, 'n']);
-  t.deepEqual(l._next_char(str, 15, true), [16, ' ']);
-  t.deepEqual(l._next_char(str, 16, true), [17, 't']);
-
-  return t.done();
-};
-
-exports._getBlockCount = function (t) {
-  t.equal((new Parser())._getBlockCount(), 145);
+exports.getBlockCount = function (t) {
+  t.equal((new Parser()).getBlockCount(), 145);
 
   return t.done();
 };
 
 exports.analyse = function (t) {
   var l = new Parser();
-  l._string = str;
+  l.string = str;
   l.analyze();
 
   return t.done();
 };
 
-exports._arr_rank = function (t) {
+exports.arrRank = function (t) {
   var l = new Parser();
 
-  t.deepEqual(l._arr_rank({
+  t.deepEqual(l.arrRank({
     "ion":3,
     "on ":3,
     " so":2,
@@ -337,10 +313,10 @@ exports._arr_rank = function (t) {
   return t.done();
 };
 
-exports._bub_sort = function (t) {
+exports.bubleSort = function (t) {
   var l = new Parser();
 
-  t.deepEqual(l._bub_sort({
+  t.deepEqual(l.bubleSort({
     " fr":1,
     "fro":1,
     "rom":1,
@@ -632,43 +608,43 @@ exports._bub_sort = function (t) {
   return t.done();
 };
 
-exports._sort_func = function (t) {
+exports.sortFunc = function (t) {
   var l = new Parser();
 
-  t.equal(l._sort_func([" go", 1], ["fro", 1]), -1);
-  t.equal(l._sort_func(["me ", 1], [" go", 1]), 1);
-  t.equal(l._sort_func([" me", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["w m", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["ow ", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["low", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["llo", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["oll", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["fol", 1], [" go", 1]), 1);
-  t.equal(l._sort_func([" fo", 1], [" go", 1]), -1);
-  t.equal(l._sort_func([" go", 1], ["rom", 1]), -1);
-  t.equal(l._sort_func(["t f", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["nt ", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["ont", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["don", 1], [" go", 1]), 1);
-  t.equal(l._sort_func([" do", 1], [" go", 1]), -1);
-  t.equal(l._sort_func([" go", 1], ["om ", 1]), -1);
-  t.equal(l._sort_func([" u ", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["s u", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["rs ", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["ers", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["her", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["the", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["oth", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["bot", 1], [" go", 1]), 1);
-  t.equal(l._sort_func([" bo", 1], [" go", 1]), -1);
-  t.equal(l._sort_func([" go", 1], ["m s", 1]), -1);
-  t.equal(l._sort_func(["t b", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["at ", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["hat", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["tha", 1], [" go", 1]), 1);
-  t.equal(l._sort_func([" th", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["f t", 1], [" go", 1]), 1);
-  t.equal(l._sort_func(["if ", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc([" go", 1], ["fro", 1]), -1);
+  t.equal(l.sortFunc(["me ", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc([" me", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["w m", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["ow ", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["low", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["llo", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["oll", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["fol", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc([" fo", 1], [" go", 1]), -1);
+  t.equal(l.sortFunc([" go", 1], ["rom", 1]), -1);
+  t.equal(l.sortFunc(["t f", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["nt ", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["ont", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["don", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc([" do", 1], [" go", 1]), -1);
+  t.equal(l.sortFunc([" go", 1], ["om ", 1]), -1);
+  t.equal(l.sortFunc([" u ", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["s u", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["rs ", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["ers", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["her", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["the", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["oth", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["bot", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc([" bo", 1], [" go", 1]), -1);
+  t.equal(l.sortFunc([" go", 1], ["m s", 1]), -1);
+  t.equal(l.sortFunc(["t b", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["at ", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["hat", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["tha", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc([" th", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["f t", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc(["if ", 1], [" go", 1]), 1);
 
   return t.done();
 };
