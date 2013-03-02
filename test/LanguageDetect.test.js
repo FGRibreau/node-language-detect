@@ -75,12 +75,60 @@ exports._normalize_score = function (t) {
   return t.done();
 };
 
-exports._detect = function (t) {
+exports.detectEnglish = function (t) {
   var l = new LanguageDetect();
-  var tweet = 'from SW HOUSTON to #PVnation SOPHOMORE STATUS Just A Soul Whose Intentions Are Good Self-expression should always b limitless if that bothers u...dont follow me';
-  var r = l.detect(tweet);
 
-  t.deepEqual(r[0], ['english', 0.35648018648018653]);
+  var tweets = [
+    [0.35648018648018653, "from SW HOUSTON to #PVnation SOPHOMORE STATUS Just A Soul Whose Intentions Are Good Self-expression should always b limitless if that bothers u...dont follow me"],
+    [0.2791666666666667, "Here we give you a play by play of our own tweeted mistakes, concerns, anxieties - quality service"],
+    [0.48144927536231885, "Hey! I haven't twited on Tweeter for a while soooo."],
+    [0.31619047619047624, "I feel like I tweet so much more now that I have an iPhone"],
+    [0.3204583333333333, "I just deleted my Facebook and when they asked for reasoning I typed. \"Twitter is better\""],
+    [0.3796031746031746, "I really need to use My tweeter more often."]
+  ];
+
+  for (var idx in tweets) {
+    var r = l.detect(tweets[idx][1]);
+    t.deepEqual(r[0], ['english', tweets[idx][0]]);
+  }
+
+  return t.done();
+};
+
+exports.detectRussian = function (t) {
+  var l = new LanguageDetect();
+
+  var tweets = [
+    [0.23288888888888892, "То, чего еще никто не писал про Нокиа, Элопа и горящую платформу"],
+    [0.23206666666666664, "Обещали без негатива. #Путин пригласил Обаму в Россию"],
+    [0.221604938271605, "Ольга Пучкова вышла в финал теннисного турнира в Бразилии"],
+    [0.16498039215686278, "Ученые обнаружили у Земли третий радиационный пояс: Изучение магнитосферы Земли и радиационных поясов имеет"],
+    [0.11141975308641971, "Самое длинное слово в Оксфордском словаре — Floccinaucinihilipilification, означающее «дать низкую оценку чему-либо»."],
+    [0.2914492753623189, "Зафиксирована нестабильность потоков лавы в районе извержения вулкана Плоский Толбачик: Извержение Плоского "]
+  ];
+
+  for (var idx in tweets) {
+    var r = l.detect(tweets[idx][1]);
+    t.deepEqual(r[0], ['russian', tweets[idx][0]]);
+  }
+
+  return t.done();
+};
+
+exports.detectLatvian = function (t) {
+  var l = new LanguageDetect();
+
+  var tweets = [
+    [0.36, "Līdz Lielajai Talkai palika 50 dienas! Piedalies un ņem līdzi draugus. Tīra Latvija ir mūsu pašu rokās un galvās :)"],
+    [0.37137931034482763, "Pēdēja ziemas diena, kaut ārā valda pavasaris. Ieskaties, kāds laiks ir gaidāms nedēļas nogalē:"],
+    [0.2349685534591195, "Jau rīt - Mīlestības svētku koncerts Mājā kur dzīvo kino:"],
+    [0.28367003367003363, "Vai jau izmēģināji mūsu starppilsētu autobusu biļešu iegādes sistēmu? Uzraksti par savām atsauksmēm :) Vai izmēģini:"]
+  ];
+
+  for (var idx in tweets) {
+    var r = l.detect(tweets[idx][1]);
+    t.deepEqual(r[0], ['latvian', tweets[idx][0]]);
+  }
 
   return t.done();
 };
