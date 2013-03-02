@@ -49,8 +49,9 @@ This package can be installed via [npm](http://npmjs.org/) as follows
 
 ### Benchmark
 
-node.js -> 1000 items processed in 1.596 secs (411 with a score > 0.2)
-PHP     -> 1000 items processed in 4.687 secs (535 with a score > 0.2)
+`node.js` 1000 items processed in 1.596 secs (411 with a score > 0.2)`
+
+`PHP` 1000 items processed in 4.687 secs (535 with a score > 0.2)`
 
 ### Credits
 
