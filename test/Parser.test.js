@@ -611,40 +611,40 @@ exports.bubleSort = function (t) {
 exports.sortFunc = function (t) {
   var l = new Parser();
 
-  t.equal(l.sortFunc([" go", 1], ["fro", 1]), -1);
-  t.equal(l.sortFunc(["me ", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc([" me", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["w m", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["ow ", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["low", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["llo", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["oll", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["fol", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc([" go", 1], ["fro", 1]), -70);
+  t.equal(l.sortFunc(["me ", 1], [" go", 1]), 77);
+  t.equal(l.sortFunc([" me", 1], [" go", 1]), 6);
+  t.equal(l.sortFunc(["w m", 1], [" go", 1]), 87);
+  t.equal(l.sortFunc(["ow ", 1], [" go", 1]), 79);
+  t.equal(l.sortFunc(["low", 1], [" go", 1]), 76);
+  t.equal(l.sortFunc(["llo", 1], [" go", 1]), 76);
+  t.equal(l.sortFunc(["oll", 1], [" go", 1]), 79);
+  t.equal(l.sortFunc(["fol", 1], [" go", 1]), 70);
   t.equal(l.sortFunc([" fo", 1], [" go", 1]), -1);
-  t.equal(l.sortFunc([" go", 1], ["rom", 1]), -1);
-  t.equal(l.sortFunc(["t f", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["nt ", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["ont", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["don", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc([" do", 1], [" go", 1]), -1);
-  t.equal(l.sortFunc([" go", 1], ["om ", 1]), -1);
-  t.equal(l.sortFunc([" u ", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["s u", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["rs ", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["ers", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["her", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["the", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["oth", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["bot", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc([" bo", 1], [" go", 1]), -1);
-  t.equal(l.sortFunc([" go", 1], ["m s", 1]), -1);
-  t.equal(l.sortFunc(["t b", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["at ", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["hat", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["tha", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc([" th", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["f t", 1], [" go", 1]), 1);
-  t.equal(l.sortFunc(["if ", 1], [" go", 1]), 1);
+  t.equal(l.sortFunc([" go", 1], ["rom", 1]), -82);
+  t.equal(l.sortFunc(["t f", 1], [" go", 1]), 84);
+  t.equal(l.sortFunc(["nt ", 1], [" go", 1]), 78);
+  t.equal(l.sortFunc(["ont", 1], [" go", 1]), 79);
+  t.equal(l.sortFunc(["don", 1], [" go", 1]), 68);
+  t.equal(l.sortFunc([" do", 1], [" go", 1]), -3);
+  t.equal(l.sortFunc([" go", 1], ["om ", 1]), -79);
+  t.equal(l.sortFunc([" u ", 1], [" go", 1]), 14);
+  t.equal(l.sortFunc(["s u", 1], [" go", 1]), 83);
+  t.equal(l.sortFunc(["rs ", 1], [" go", 1]), 82);
+  t.equal(l.sortFunc(["ers", 1], [" go", 1]), 69);
+  t.equal(l.sortFunc(["her", 1], [" go", 1]), 72);
+  t.equal(l.sortFunc(["the", 1], [" go", 1]), 84);
+  t.equal(l.sortFunc(["oth", 1], [" go", 1]), 79);
+  t.equal(l.sortFunc(["bot", 1], [" go", 1]), 66);
+  t.equal(l.sortFunc([" bo", 1], [" go", 1]), -5);
+  t.equal(l.sortFunc([" go", 1], ["m s", 1]), -77);
+  t.equal(l.sortFunc(["t b", 1], [" go", 1]), 84);
+  t.equal(l.sortFunc(["at ", 1], [" go", 1]), 65);
+  t.equal(l.sortFunc(["hat", 1], [" go", 1]), 72);
+  t.equal(l.sortFunc(["tha", 1], [" go", 1]), 84);
+  t.equal(l.sortFunc([" th", 1], [" go", 1]), 13);
+  t.equal(l.sortFunc(["f t", 1], [" go", 1]), 70);
+  t.equal(l.sortFunc(["if ", 1], [" go", 1]), 73);
 
   return t.done();
 };
@@ -669,124 +669,124 @@ exports.getTrigramRank = function (t) {
     ' ar':12,
     ' b ':13,
     ' bo':14,
-    ' fo':15,
-    ' fr':16,
-    ' go':17,
-    ' ho':18,
-    ' if':19,
-    ' in':20,
-    ' ju':21,
-    ' li':22,
-    ' me':23,
-    ' pv':24,
-    ' se':25,
-    ' sh':26,
-    ' st':27,
-    ' sw':28,
-    ' th':29,
-    ' to':30,
-    ' ud':31,
-    ' wh':32,
-    'a s':33,
-    alw:34,
-    are:35,
-    'at ':36,
-    ati:37,
-    atu:38,
-    ays:39,
-    'b l':40,
-    bot:41,
-    'd a':42,
-    'd s':43,
-    don:44,
-    'e g':45,
-    'e i':46,
-    'e s':47,
-    elf:48,
-    ent:49,
-    ers:50,
-    exp:51,
-    'f t':52,
-    fex:53,
-    fol:54,
-    fro:55,
-    goo:56,
-    hat:57,
-    her:58,
-    hom:59,
-    hos:60,
-    'if ':61,
-    imi:62,
-    int:63,
-    itl:64,
-    jus:65,
-    'l w':66,
-    'ld ':67,
-    les:68,
-    lfe:69,
-    lim:70,
-    llo:71,
-    low:72,
-    lwa:73,
-    'm s':74,
-    'me ':75,
-    mit:76,
-    mor:77,
-    'n t':78,
-    nat:79,
-    'ns ':80,
-    'nt ':81,
-    nte:82,
-    nti:83,
-    'o p':84,
-    'od ':85,
-    oll:86,
-    'om ':87,
-    omo:88,
-    ons:89,
-    ont:90,
-    ood:91,
-    oph:92,
-    ore:93,
-    ose:94,
-    oth:95,
-    ous:96,
-    'ow ':97,
-    pho:98,
-    pre:99,
-    pvn:100,
-    res:101,
-    rom:102,
-    'rs ':103,
-    's a':104,
-    's b':105,
-    's i':106,
-    's j':107,
-    's u':108,
-    'se ':109,
-    sel:110,
-    sho:111,
-    sio:112,
-    sop:113,
-    sou:114,
-    'ss ':115,
-    ssi:116,
-    'st ':117,
-    sta:118,
-    sto:119,
-    'sw ':120,
-    't a':121,
-    't b':122,
-    't f':123,
-    tat:124,
-    ten:125,
-    tha:126,
-    the:127,
-    tle:128,
-    'to ':129,
-    ton:130,
-    tus:131,
-    udo:132,
+    ' do':15,
+    ' ex':16,
+    ' fo':17,
+    ' fr':18,
+    ' go':19,
+    ' ho':20,
+    ' if':21,
+    ' in':22,
+    ' ju':23,
+    ' li':24,
+    ' me':25,
+    ' pv':26,
+    ' se':27,
+    ' sh':28,
+    ' st':29,
+    ' sw':30,
+    ' th':31,
+    ' to':32,
+    ' u ':33,
+    ' wh':34,
+    'a s':35,
+    alw:36,
+    are:37,
+    'at ':38,
+    ati:39,
+    atu:40,
+    ays:41,
+    'b l':42,
+    bot:43,
+    'd a':44,
+    'd s':45,
+    don:46,
+    'e g':47,
+    'e i':48,
+    'e s':49,
+    elf:50,
+    ent:51,
+    ers:52,
+    exp:53,
+    'f e':54,
+    'f t':55,
+    fol:56,
+    fro:57,
+    goo:58,
+    hat:59,
+    her:60,
+    hom:61,
+    hos:62,
+    'if ':63,
+    imi:64,
+    int:65,
+    itl:66,
+    jus:67,
+    'l w':68,
+    'ld ':69,
+    les:70,
+    'lf ':71,
+    lim:72,
+    llo:73,
+    low:74,
+    lwa:75,
+    'm s':76,
+    'me ':77,
+    mit:78,
+    mor:79,
+    'n t':80,
+    nat:81,
+    'ns ':82,
+    'nt ':83,
+    nte:84,
+    nti:85,
+    'od ':86,
+    oll:87,
+    'om ':88,
+    omo:89,
+    ons:90,
+    ont:91,
+    ood:92,
+    oph:93,
+    ore:94,
+    ose:95,
+    oth:96,
+    ous:97,
+    'ow ':98,
+    pho:99,
+    pre:100,
+    pvn:101,
+    res:102,
+    rom:103,
+    'rs ':104,
+    's a':105,
+    's b':106,
+    's i':107,
+    's j':108,
+    's u':109,
+    'se ':110,
+    sel:111,
+    sho:112,
+    sio:113,
+    sop:114,
+    sou:115,
+    'ss ':116,
+    ssi:117,
+    'st ':118,
+    sta:119,
+    sto:120,
+    'sw ':121,
+    't a':122,
+    't b':123,
+    't f':124,
+    tat:125,
+    ten:126,
+    tha:127,
+    the:128,
+    tle:129,
+    'to ':130,
+    ton:131,
+    tus:132,
     'ul ':133,
     uld:134,
     'us ':135,
