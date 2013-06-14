@@ -719,7 +719,7 @@ exports.getTrigramRank = function (t) {
     hos:62,
     'if ':63,
     imi:64,
-    int:65,
+    'int':65,
     itl:66,
     jus:67,
     'l w':68,
