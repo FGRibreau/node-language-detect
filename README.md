@@ -56,6 +56,9 @@ This package can be installed via [npm](http://npmjs.org/) as follows
 
 Nicholas Pisarro for his work on [PEAR::Text_LanguageDetect](http://pear.php.net/package/Text_LanguageDetect)
 
+### Donate
+[Donate Bitcoins](https://coinbase.com/checkouts/fc3041b9d8116e0b98e7d243c4727a30)
+
 ### License
 
 Copyright (c) 2013, Francois-Guillaume Ribreau <node@fgribreau.com>, Ruslan Zavackiy <ruslan@zavackiy.com>
