@@ -1,4 +1,4 @@
-# Node Language Detect [![Build Status](https://secure.travis-ci.org/FGRibreau/node-language-detect.png)](http://travis-ci.org/FGRibreau/node-language-detect) [![Gittip](http://badgr.co/gittip/fgribreau.png)](https://www.gittip.com/fgribreau/) #
+# Node Language Detect [![Build Status](https://secure.travis-ci.org/FGRibreau/node-language-detect.png)](http://travis-ci.org/FGRibreau/node-language-detect) #
 `LanguageDetect` is a port of the [PEAR::Text_LanguageDetect](http://pear.php.net/package/Text_LanguageDetect) for [node.js](http://nodejs.org).
 
 LanguageDetect can identify 52 human languages from text samples and return confidence scores for each.
@@ -55,9 +55,6 @@ This package can be installed via [npm](http://npmjs.org/) as follows
 ### Credits
 
 Nicholas Pisarro for his work on [PEAR::Text_LanguageDetect](http://pear.php.net/package/Text_LanguageDetect)
-
-### Donate
-[Donate Bitcoins](https://coinbase.com/checkouts/fc3041b9d8116e0b98e7d243c4727a30)
 
 ### License
 
