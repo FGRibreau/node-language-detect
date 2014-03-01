@@ -81,6 +81,17 @@ exports.getLanguageCount = function (t) {
   return t.done();
 };
 
+exports.detectShortString = function(t) {
+  var l = new LanguageDetect();
+
+  t.deepEqual([], l.detect(''));
+  t.deepEqual([], l.detect('a'));
+  t.deepEqual([], l.detect('ab'));
+  t.notDeepEqual([], l.detect('abc'));
+
+  return t.done();
+};
+
 exports.detectEnglish = function (t) {
   var l = new LanguageDetect();
 
