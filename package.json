@@ -22,7 +22,7 @@
     }
   ],
   "scripts": {
-    "test": "node_modules/nodeunit/bin/nodeunit test/*.test.js"
+    "test": "nodeunit test/*.test.js"
   },
   "devDependencies": {
     "nodeunit": ">= 0.5.1"
