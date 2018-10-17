@@ -1,6 +1,7 @@
 {
   "name": "languagedetect",
   "description": "Nodejs language detection library using n-gram",
+  "types": "index.d.ts",
   "keywords": [
     "n-gram",
     "language",
