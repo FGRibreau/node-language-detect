@@ -1,0 +1,6 @@
+benchmark
+node_modules
+tests
+.gitignore
+.travis.yml
+History.md

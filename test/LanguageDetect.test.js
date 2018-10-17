@@ -138,7 +138,7 @@ exports.detectRussian = function (t) {
     [0.234421768707483, "Обещали без негатива. #Путин пригласил Обаму в Россию"],
     [0.221604938271605, "Ольга Пучкова вышла в финал теннисного турнира в Бразилии"],
     [0.1667857142857142, "Ученые обнаружили у Земли третий радиационный пояс: Изучение магнитосферы Земли и радиационных поясов имеет"],
-    [0.11148148148148151 , "Самое длинное слово в Оксфордском словаре — Floccinaucinihilipilification, означающее «дать низкую оценку чему-либо»."],
+    [0.11163580246913585 , "Самое длинное слово в Оксфордском словаре — Floccinaucinihilipilification, означающее «дать низкую оценку чему-либо»."],
     [0.2945421245421246, "Зафиксирована нестабильность потоков лавы в районе извержения вулкана Плоский Толбачик: Извержение Плоского "]
   ];
 
@@ -154,10 +154,10 @@ exports.detectLatvian = function (t) {
   var l = new LanguageDetect();
 
   var tweets = [
-    [0.350446735395189, "Līdz Lielajai Talkai palika 50 dienas! Piedalies un ņem līdzi draugus. Tīra Latvija ir mūsu pašu rokās un galvās :)"],
-    [0.37525490196078426, "Pēdēja ziemas diena, kaut ārā valda pavasaris. Ieskaties, kāds laiks ir gaidāms nedēļas nogalē:"],
-    [0.2349685534591195, "Jau rīt - Mīlestības svētku koncerts Mājā kur dzīvo kino:"],
-    [0.2864625850340137, "Vai jau izmēģināji mūsu starppilsētu autobusu biļešu iegādes sistēmu? Uzraksti par savām atsauksmēm :) Vai izmēģini:"]
+    [0.35, "Līdz Lielajai Talkai palika 50 dienas! Piedalies un ņem līdzi draugus. Tīra Latvija ir mūsu pašu rokās un galvās :)"],
+    [0.3777254901960784, "Pēdēja ziemas diena, kaut ārā valda pavasaris. Ieskaties, kāds laiks ir gaidāms nedēļas nogalē:"],
+    [0.2364779874213837, "Jau rīt - Mīlestības svētku koncerts Mājā kur dzīvo kino:"],
+    [0.2857142857142857, "Vai jau izmēģināji mūsu starppilsētu autobusu biļešu iegādes sistēmu? Uzraksti par savām atsauksmēm :) Vai izmēģini:"]
   ];
 
   for (var idx in tweets) {

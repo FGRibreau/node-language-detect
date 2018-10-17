@@ -2,3 +2,4 @@ phptest
 node_modules
 .cupboard
 .idea
+package-lock.json
