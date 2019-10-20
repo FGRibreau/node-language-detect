@@ -2,7 +2,7 @@
 [![Build Status](https://secure.travis-ci.org/FGRibreau/node-language-detect.png)](http://travis-ci.org/FGRibreau/node-language-detect)
 [![Deps](https://david-dm.org/FGRibreau/node-language-detect.png)](https://david-dm.org/FGRibreau/node-language-detect)
 [![Version](http://badge.fury.io/js/languagedetect.png)](http://badge.fury.io/js/languagedetect)
-[![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/francois-guillaume-ribreau?utm_source=github&utm_medium=button&utm_term=francois-guillaume-ribreau&utm_campaign=github) 
+[![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/francois-guillaume-ribreau?utm_source=github&utm_medium=button&utm_term=francois-guillaume-ribreau&utm_campaign=github)
 
 ![npm](https://nodei.co/npm/languagedetect.png)
 
@@ -16,7 +16,7 @@ This package can be installed via [npm](http://npmjs.org/) as follows
 npm install languagedetect --save
 ```
 ### Example
-```javascript    
+```javascript
 const LanguageDetect = require('languagedetect');
 const lngDetector = new LanguageDetect();
 
@@ -52,7 +52,10 @@ console.log(lngDetector.detect('This is a test.', 2));
 * `detect(sample, limit)` Detects the closeness of a sample of text to the known languages
 * `getLanguages()` Returns the list of detectable languages
 * `getLanguageCount()` Returns the number of languages that the lib can detect
-
+* `setLanguageType(format)` Sets the language format to be used. Suported values:
+  * `iso2`, resulting in two letter language format
+  * `iso3`, resulting in three letter language format
+  * Any other value results in the full language name
 ### Benchmark
 * `node.js` 1000 items processed in 1.277 secs (482 with a score > 0.2)
 * `PHP` 1000 items processed in 4.835 secs (535 with a score > 0.2)

@@ -40,6 +40,19 @@ declare module 'languagedetect' {
          * @returns How many languages are supported
          */
         getLanguageCount(): number;
+
+        /**
+         * Set the language format to be used in the results
+         *
+         * Supported types are 'iso2' and 'iso3'. Any other
+         * value will result in the full language name being
+         * used (default).
+         *
+         * @example
+         * setLanguageType('iso2');
+         * @param languageType
+         */
+        setLanguageType(languageType): void;
     }
 
     export = LanguageDetect;
