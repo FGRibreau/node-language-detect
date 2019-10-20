@@ -1,8 +1,12 @@
 # Node Language Detect
-[![Build Status](https://secure.travis-ci.org/FGRibreau/node-language-detect.png)](http://travis-ci.org/FGRibreau/node-language-detect)
-[![Deps](https://david-dm.org/FGRibreau/node-language-detect.png)](https://david-dm.org/FGRibreau/node-language-detect)
-[![Version](http://badge.fury.io/js/languagedetect.png)](http://badge.fury.io/js/languagedetect)
-[![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/francois-guillaume-ribreau?utm_source=github&utm_medium=button&utm_term=francois-guillaume-ribreau&utm_campaign=github)
+[![Travis (.org)](https://img.shields.io/travis/FGRibreau/node-language-detect)](http://travis-ci.org/FGRibreau/node-language-detect)
+[![David](https://img.shields.io/david/FGRibreau/node-language-detect)](https://david-dm.org/FGRibreau/node-language-detect)
+[![npm](https://img.shields.io/npm/v/languagedetect)](https://www.npmjs.com/package/languagedetect)
+[![npm](https://img.shields.io/npm/dw/languagedetect)](https://www.npmjs.com/package/languagedetect)
+[![node](https://img.shields.io/node/v/languagedetect)](https://www.npmjs.com/package/languagedetect)
+[![npm bundle size](https://img.shields.io/bundlephobia/minzip/languagedetect)](https://www.npmjs.com/package/languagedetect)
+[![Get help on Codementor](https://img.shields.io/badge/codementor-get%20help-blue.svg)](https://www.codementor.io/francois-guillaume-ribreau?utm_source=github&utm_medium=button&utm_term=francois-guillaume-ribreau&utm_campaign=github)
+[![Twitter Follow](https://img.shields.io/twitter/follow/FGRibreau?style=social)](https://twitter.com/FGRibreau)
 
 ![npm](https://nodei.co/npm/languagedetect.png)
 
