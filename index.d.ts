@@ -52,7 +52,7 @@ declare module 'languagedetect' {
          * setLanguageType('iso2');
          * @param languageType
          */
-        setLanguageType(languageType): void;
+        setLanguageType(languageType: string): void;
     }
 
     export = LanguageDetect;
