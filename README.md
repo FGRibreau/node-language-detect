@@ -6,7 +6,7 @@
 [![node](https://img.shields.io/node/v/languagedetect)](https://www.npmjs.com/package/languagedetect)
 [![npm bundle size](https://img.shields.io/bundlephobia/minzip/languagedetect)](https://www.npmjs.com/package/languagedetect)
 [![Get help on Codementor](https://img.shields.io/badge/codementor-get%20help-blue.svg)](https://www.codementor.io/francois-guillaume-ribreau?utm_source=github&utm_medium=button&utm_term=francois-guillaume-ribreau&utm_campaign=github)
-[![Twitter Follow](https://img.shields.io/twitter/follow/FGRibreau?style=social)](https://twitter.com/FGRibreau)
+[![Twitter Follow](https://img.shields.io/twitter/follow/FGRibreau?style=social)](https://twitter.com/FGRibreau) [![Slack](https://img.shields.io/badge/Slack-Join%20our%20tech%20community-17202A?logo=slack)](https://join.slack.com/t/fgribreau/shared_invite/zt-edpjwt2t-Zh39mDUMNQ0QOr9qOj~jrg)
 
 ![npm](https://nodei.co/npm/languagedetect.png)
 
